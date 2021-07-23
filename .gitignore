@@ -1,5 +1,5 @@
 # Never save database creditentials in your repo. Keep a dummy copy with a different name eg "local.xml.dev" 
-app/etc/local.xml
+#app/etc/local.xml
 
 downloader
 # If you'd like to keep the downloader, use the following instead:
