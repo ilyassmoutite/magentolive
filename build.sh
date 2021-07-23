@@ -39,7 +39,7 @@ cd ${BUILD}
 #tar -xzf magento-1.9.3.7-2017-11-27-05-32-35.tar.gz 
 #rm magento-1.9.3.7-2017-11-27-05-32-35.tar.gz
 #cd magento
-find var media  -type d -exec chmod 777 {} \;
+#find var media  -type d -exec chmod 777 {} \;
 
 # CREATE ARTIFACT
 cd ${BUILD}
