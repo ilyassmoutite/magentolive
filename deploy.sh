@@ -67,9 +67,11 @@ cd ${WORKING_DIR}
 #bin/magento cron:install --force ?
 
 # SWITCH LIVE
-#cd ${WORKING_DIR}
-#unlink ${LIVE}/magento && ln -sf ${TARGET} ${LIVE}
-
+cd ${WORKING_DIR}
+if [  -L 'current' ]; then
+  unlink current
+fi
+ln -s  ${RELEASE}/ /home/ilyass/current
 # CLEAR ALL CACHES
 #${LIVE}/${MAGENTO_DIR}/bin/magento cache:flush
 #sudo service php5-fpm reload
